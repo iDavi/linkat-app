@@ -1,5 +1,7 @@
 .logo-linkat {
     font-family: "jua";
+    cursor: pointer;
+    user-select: none;
 }
 
 .logo-linkat .title {

@@ -1,0 +1,12 @@
+
+<form class="form" [formGroup]="linkCreationControl" (ngSubmit)="onSubmit()">
+    <input class="cat-textbox" name="url" placeholder="your url" type="text" formControlName="url">
+    <input class="cat-textbox" name="nickname" placeholder="link nickname (linkat.fun/nickname)" type="text" formControlName="nickname">
+      <ngx-recaptcha2
+      siteKey="6Ld3t6UqAAAAAPdsGqWaRvyGTI5aaKzC2NPwGxSm"
+      theme="dark"
+      formControlName="recaptcha"
+      ></ngx-recaptcha2>
+    <button class="cat-button" type="submit" [disabled]="!linkCreationControl.valid">paw it!</button>
+</form>
+<h1 class="error-label">{{errorMessage}}</h1>

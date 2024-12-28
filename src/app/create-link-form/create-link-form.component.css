@@ -1,0 +1,102 @@
+@keyframes rotate-a-bit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+input {
+    appearance: none; /* Remove a aparência específica do navegador (altamente recomendado) */
+    -webkit-appearance: none; /* Para Safari e Chrome mais antigos */
+    -moz-appearance: textfield; /* Para Firefox (remove setas de number input) */
+    border: none;
+    padding: 0;
+    background-color: transparent; /* Ou uma cor específica que você desejar */
+    font-family: inherit; /* Herda a fonte do elemento pai */
+    font-size: inherit; /* Herda o tamanho da fonte do elemento pai */
+    line-height: inherit; /* Herda a altura da linha do elemento pai */
+    outline: none; /* Remove o contorno de foco (cuidado com a acessibilidade!) */
+    box-shadow: none; /* Remove qualquer sombra */
+    margin: 0; /* Remove margens, se houver */
+  }
+  
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    align-content: normal;
+}
+
+.form * {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: "jua";
+    text-align: center;
+}
+
+
+
+.cat-textbox {
+    background-color: #EF7371;
+    border: 2px solid #EF977F;
+    color: #F6B980;
+    width: 400px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.cat-textbox:hover {
+
+    border: 3px solid #EF977F;
+
+}
+
+.cat-textbox:focus {
+    border-color: inherit;
+    border: 3px solid #EF977F;
+    background-color: #c95e5d;
+    box-shadow: none;
+}
+
+.cat-button {
+    background-color: #2A1C1B;
+    color: #F6B980;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.cat-button:hover {
+    animation: rotate-a-bit;
+    animation-duration: 0.7s;
+    cursor: pointer;
+    animation-iteration-count: infinite;
+}
+
+.cat-button:disabled{
+    animation: none;
+    background-color: #6b6b6b;
+    color: #a5a6a8;
+}
+
+.error-label {
+    font-family: "jua";
+    text-align: center;
+    color: #EF7371;
+}

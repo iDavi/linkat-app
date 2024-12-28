@@ -1,0 +1,55 @@
+@keyframes rotate-a-bit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+button {
+    appearance: none; /* Remove a aparência específica do navegador (altamente recomendado) */
+    -webkit-appearance: none; /* Para Safari e Chrome mais antigos */
+    -moz-appearance: textfield; /* Para Firefox (remove setas de number input) */
+    border: none;
+    padding: 0;
+    background-color: transparent; /* Ou uma cor específica que você desejar */
+    font-family: inherit; /* Herda a fonte do elemento pai */
+    font-size: inherit; /* Herda o tamanho da fonte do elemento pai */
+    line-height: inherit; /* Herda a altura da linha do elemento pai */
+    outline: none; /* Remove o contorno de foco (cuidado com a acessibilidade!) */
+    box-shadow: none; /* Remove qualquer sombra */
+    margin: 0; /* Remove margens, se houver */
+}
+
+
+.link-ready-text {
+    font-family: "jua";
+    color: #FDF4E5;
+}
+
+.cat-button {
+    background-color: #2A1C1B;
+    font-family: "jua";
+    color: #F6B980;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.cat-button:hover {
+    animation: rotate-a-bit;
+    animation-duration: 0.7s;
+    cursor: pointer;
+    animation-iteration-count: infinite;
+}
