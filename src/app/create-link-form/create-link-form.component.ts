@@ -13,7 +13,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 
-
 @Component({
   selector: 'app-form',
   standalone: true,
@@ -24,6 +23,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class CreateLinkFormComponent{
   createLinkEndpoint = '/links';
   errorMessage = ""
+  captchaSiteKey = environment.captchaSiteKey
   linkCreationControl = new FormGroup({
     url: new FormControl('', Validators.required),
     nickname: new FormControl('', Validators.required),
