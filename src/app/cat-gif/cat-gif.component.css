@@ -1,5 +1,6 @@
 img {
     border-radius: 20px;  
     width: 60vw;
+    max-width: 500px;
     height: auto;  
 }
