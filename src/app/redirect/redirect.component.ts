@@ -22,7 +22,6 @@ export class RedirectComponent implements OnInit {
 
   async displayError(errorMsg : string){
     await this.router.navigate([""], {queryParams: {errorMessage: errorMsg}})
-    window.location.reload()
   }
 
   ngOnInit(): void {
