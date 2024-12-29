@@ -7,7 +7,7 @@ import { LinkReadyComponent } from './link-ready/link-ready.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LogoComponent, CreateLinkFormComponent, LinkReadyComponent],
+  imports: [RouterOutlet, LogoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

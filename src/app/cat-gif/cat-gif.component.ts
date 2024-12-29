@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { catGifsUrlGenerator } from './cat-gif-url-generator';
 @Component({
   selector: 'app-cat-gif',
   standalone: true,
@@ -9,9 +9,5 @@ import { Component } from '@angular/core';
 })
 export class CatGifComponent {
   private gifsCount = 11;
-  catImgSrc : string = this.getCatImgSrc();
-  private getCatImgSrc() {
-    let index = Math.round(Math.random() * (this.gifsCount-1) + 1);
-    return `/images/cat-gifs/${index}.gif`
-  }
+  catImgSrc : string = catGifsUrlGenerator.generate()
 }
