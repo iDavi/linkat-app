@@ -1,27 +1,6 @@
-# LinkatApp
+![](https://github.com/user-attachments/assets/d5e5f00a-868d-40cb-a0a8-79222d09b4f0)
+# linkat: a-meow-zingly short urls
+linkat is a link shortener service that shows a cat gif for 5 seconds before redirecting the user to the final url. It's inspired by services like **ad.fly**, but with cats instead of ads.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# linkat-app
+linkat-app is the front-end for linkat. It runs on Angular. The production url for this api is https://linkat.fun.
