@@ -1,7 +1,7 @@
 
 <form class="form" [formGroup]="linkCreationControl" (ngSubmit)="onSubmit()">
     <input class="cat-textbox" name="url" placeholder="your url" type="text" formControlName="url">
-    <input class="cat-textbox" name="nickname" placeholder="link nickname (linkat.fun/nickname)" type="text" formControlName="nickname">
+    <input class="cat-textbox" name="nickname" placeholder="nickname" type="text" formControlName="nickname">
       <ngx-recaptcha2
       [siteKey]="captchaSiteKey"
       theme="dark"

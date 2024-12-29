@@ -16,6 +16,11 @@
     }
 }
 
+::placeholder {
+    color: #f29979;
+    opacity: 1;
+}
+
 input {
     appearance: none; /* Remove a aparência específica do navegador (altamente recomendado) */
     -webkit-appearance: none; /* Para Safari e Chrome mais antigos */
