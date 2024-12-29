@@ -18,7 +18,13 @@ export class RedirectComponent implements OnInit {
   private finalUrl = "";
   private getLinkEndpoint = "/links/"
 
-  constructor(private httpClient : HttpClient, private route : ActivatedRoute){}
+  constructor(private httpClient : HttpClient, private route : ActivatedRoute, private router : Router){}
+
+  async displayError(errorMsg : string){
+    await this.router.navigate([""], {queryParams: {errorMessage: errorMsg}})
+    window.location.reload()
+  }
+
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       let nickname = params.get("nickname");
@@ -27,7 +33,7 @@ export class RedirectComponent implements OnInit {
           this.finalUrl = response.data.url
         },
         error: (response : any) => {
-          console.log(response)
+          this.displayError(nickname + " : url not found")
         }
       });
     })
