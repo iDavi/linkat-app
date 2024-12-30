@@ -8,6 +8,5 @@ import { catGifsUrlGenerator } from './cat-gif-url-generator';
   styleUrl: './cat-gif.component.css'
 })
 export class CatGifComponent {
-  private gifsCount = 11;
   catImgSrc : string = catGifsUrlGenerator.generate()
 }
