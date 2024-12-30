@@ -1,5 +1,5 @@
 //this is the production server
-//this should be started after `ng build -c production`
+//npm start builds the application and runs this
 
 const express = require('express');
 const path = require('path');
