@@ -1,3 +1,12 @@
 .container {
     text-align: center;
 }
+
+footer p {
+    color: antiquewhite;
+    font-family: "jua";
+} 
+
+a:link, a:visited {
+    color: antiquewhite !important;
+}
