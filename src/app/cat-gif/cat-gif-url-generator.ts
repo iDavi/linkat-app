@@ -21,7 +21,7 @@ const catGifs = [
 export class catGifsUrlGenerator {
     static generate(){
         const gifCount = catGifs.length;
-        const index = Math.round(Math.random() * (gifCount-1) + 1);
+        const index = Math.floor(Math.random() * (gifCount));
         return catGifs[index];
     }
 }
